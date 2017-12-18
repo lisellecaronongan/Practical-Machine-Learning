@@ -118,7 +118,7 @@ MostImpVars <- varImp(model_RF)
 MostImpVars
 ```
 
-With random forest, we reach an accuracy of 99.3% using cross-validation with 5 steps. This is already good. But let's see what we can expect with Gradient boosting.
+With random forest, we reach an accuracy of 99.3% using cross-validation with 5 steps.Out-of sample error rate is 0.7%.  This is already good. But let's see what we can expect with Gradient boosting.
 
 We can also see that the optimal number of predictors, i.e. the number of predictors giving the highest accuracy, is 27. There is no significant increase of the accuracy with 2 predictors and 27, but the slope decreases more with more than 27 predictors (even if the accuracy is still very good). The fact that not all the accuracy is worse with all the available predictors allows us to suggest that there may be some dependencies between them.
 
